@@ -1,0 +1,103 @@
+title:  Starting in Symfony2: Episode 2 (2.4+)
+summary: |
+    Over the next hour, we're going to take you through some of the most difficult areas of Symfony learning all about security, forms, and parts of Doctrine. We'll also see testing and learn more about how Symfony's service container works. When you get to the end, you'll be well on your way to mastering Symfony.
+
+    Own the original second episode? Login and get this upgrade for $4!
+
+    One of the things we'll be creating is a security system that stores users in the database. This is functionality similar to what's offered by the very popular FOSUserBundle. That bundle is really great, but until you understand how the security system works, you're going to run into limitations. Once you do, you'll feel at home using FOSUserBundle or configuring the security system all on your own.
+
+    Highlights:
+
+    * Learning and building a form-login security system from scratch
+    * Loading users from the database
+    * Using AdvancedUserInterface and UserProviderInterface classes to give us more control over login
+    * Doctrine Repositories and Querying
+    * Building forms: creating fields, the data_class option, form type classes
+    * Form field options & HTML5 validation
+    * Form rendering
+    * Functional Testing!
+
+    ... and of course, tips, tricks, best practices and other little features along the way!
+
+illustration: sf2-ep2.png
+videoDownloadExtension: mov
+tuts_hero:
+    start_step:  "MindTrick: Twig whitespace control"
+    finish_step: "Remember Me: Setting it all up"
+
+chapters:
+    intro:
+        video_key:  xo1tp2mawh
+        is_free:    true
+    "basic-security":
+        video_key:  ai03qta6rp
+        is_free:    true
+    "authorization-access-control":
+        video_key:  q3qcy5v1yu
+        is_free:    true
+    "login-form":
+        video_key:  05mjpiduu9
+    "login-form2":
+        video_key:  fnntchp1rf
+    "logout":
+        video_key:  7c11n9r243
+    "twig-security-is-authenticated":
+        video_key:  bx8ayzixqj
+    "deny-access-controller":
+        video_key:  t71z23obgu
+    "entity-security":
+        video_key:  x8fo22bwcr
+    "saving-users":
+        video_key:  rhamzr4t9i
+    "roles-disabling-user":
+        video_key:  0qkxqeigfu
+    "repository":
+        video_key:  nu4tdjfskm
+    "query-builder":
+        video_key:  4s7eiiiz54
+    "user-provider":
+        video_key:  f0wt1ig4vg
+    "user-serialization":
+        video_key:  n1qs1fk455
+    "registration-form":
+        video_key:  u04v4ygnt5
+    "form-rendering":
+        video_key:  nuiogfdd9h
+    "repeated-compound-fields":
+        video_key:  4kp04fqq7u
+    "form-submit":
+        video_key:  bk92l2afci
+    "form-data":
+        video_key:  53vkd2jhje
+    "plain-password":
+        video_key:  uilbrzy2oh
+    "form-type-class":
+        video_key:  0lb5prjmqb
+    "field-options-html5":
+        video_key:  prc1itzavu
+    "registration-validation":
+        video_key:  cwlscbd6bq
+    "flash-message":
+        video_key:  d9rnh7iax1
+    "auto-login":
+        video_key:  shzhpwb3uc
+    "testing":
+        video_key:  7u3soik5a6
+    "testing-forms":
+        video_key:  t77z3o96vz
+    "testing-data":
+        video_key:  5nlnnco5lt
+    "container-doctrine":
+        video_key:  nflct61ysv
+    "after-dinner-mint":
+        video_key:  y7edkfcsup
+    "role-hierarchies":
+        video_key:  j5zy6f63ko
+    "impersonation":
+        video_key:  yi50s08q12
+    "secure-every-page":
+        video_key:  aqk70qtphe
+    "accessing-security-user":
+        video_key:  6y4htox38p
+    "remember-me":
+        video_key:  i8u0nkwv87
