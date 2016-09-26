@@ -1,0 +1,22 @@
+{
+  "name": "tinklai_kursinis",
+  "homepage": "https://github.com/simonasB/Tinklai_Kursinis",
+  "authors": [
+    "Simonas Baltulionis <simonas.baltulionis@virtustream.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "web/assets/vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
