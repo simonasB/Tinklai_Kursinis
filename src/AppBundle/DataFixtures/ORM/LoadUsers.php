@@ -18,11 +18,15 @@ class LoadUserData implements FixtureInterface
     {
         $userAdmin = new User();
         $userAdmin->setUsername('admin');
-        $userAdmin->setPassword('test');
+        $userAdmin->setPlainPassword('test');
         $userAdmin->setName("admin");
         $userAdmin->setSurname("admin");
         $userAdmin->setEmail("admin@admin.com");
         $userAdmin->setRoles(array('ROLE_ADMIN'));
+        $userAdmin->setEnabled(true);
+        $userAdmin->setCredentialsExpired(false);
+        $userAdmin->setExpired(false);
+        $userAdmin->setLocked(false);
         $manager->persist($userAdmin);
 
         $userAccountant = new User();

@@ -1,5 +1,20 @@
 {% extends "FOSUserBundle::layout.html.twig" %}
 
-{% block fos_user_content %}
-    {{ include('FOSUserBundle:Security:login_content.html.twig') }}
-{% endblock fos_user_content %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+    <link rel="stylesheet" href="{{ asset('css/form-elements.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/vendor/font-awesome/css/font-awesome.min.css') }}">
+{% endblock %}
+
+{% block body %}
+    {% block javascripts %}
+        {{ parent() }}
+        <script src="{{ asset('assets/vendor/jquery-backstretch-2/jquery.backstretch.min.js') }}"></script>
+        <script src="{{ asset('js/scripts.js') }}"></script>
+    {% endblock %}
+    {% block fos_user_content %}
+        {{ include('FOSUserBundle:Security:login_content.html.twig') }}
+    {% endblock fos_user_content %}
+{% endblock %}
