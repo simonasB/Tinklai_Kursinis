@@ -86,3 +86,5 @@ fos_user:
               from_email:
                   address:        resetting@example.com
                   sender_name:    Demo Resetting
+
+white_october_breadcrumbs: ~
