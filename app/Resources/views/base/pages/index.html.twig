@@ -1,1 +1,60 @@
-{% extends "base/base.html.twig" %}
+{% extends 'base/base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('assets/vendor/iCheck/skins/flat/green.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block page_content %}
+    <!-- page content -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>Users</h2>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <!-- start user list -->
+                    <table class="table table-striped projects">
+                        <thead>
+                        <tr>
+                            <th style="width: 1%">#</th>
+                            <th style="width: 20%">Name</th>
+                            <th>Surname</th>
+                            <th>Email</th>
+                            <th>Roles</th>
+                            <th style="width: 20%">#Edit</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>#</td>
+                                <td>name</td>
+                                <td>surname</td>
+                                <td>email</td>
+                                <td>Role</td>
+                                <td>
+                                    <a href="{{ path('user_show', { 'id': 1}) }}" class="btn btn-primary btn-xs">
+                                        <i class="fa fa-folder"></i> View
+                                    </a>
+                                    <a href="{{ path('user_edit', { 'id': 1}) }}" class="btn btn-info btn-xs">
+                                        <i class="fa fa-pencil"></i> Edit
+                                    </a>
+                                    <a href="{{ path('user_show', { 'id': 1 }) }}" class="btn btn-danger btn-xs">
+                                        <i class="fa fa-trash-o"></i> Delete
+                                    </a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <!-- end user list -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /page content -->
+{% endblock page_content %}

@@ -48,13 +48,13 @@ class DefaultController extends Controller
         return $this->render('base/pages/dashboard.html.twig', []);
     }
     /**
-     * @Route("/calendar", name="app_calendar")
+     * @Route("/base", name="app_base")
      * @param Request $request Request
      * @return Response
      */
     public function calendarAction(Request $request)
     {
-        return $this->render('base/pages/calendar.html.twig', []);
+        return $this->render('base/pages/index.html.twig', []);
     }
     /**
      * @Route("/contacts", name="app_contacts")

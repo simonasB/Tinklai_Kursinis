@@ -4305,3 +4305,17 @@ ul.notifications {
     border: 1px solid #e5e5e5; }
 
 /** /Dropzone.js **/
+
+/** Simonas Baltulionis Custom css **/
+.btn-panel-action {
+    color: #fff !important;
+    background-color: #5bc0de !important;
+    border-color: #46b8da !important;
+}
+
+.btn-panel-action:hover {
+    color: #fff !important;
+    background-color: #31b0d5 !important;
+    border-color: #269abc !important;
+}
+/** Simonas Baltulionis Custom css **/

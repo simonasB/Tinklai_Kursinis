@@ -12,6 +12,13 @@
                 <div class="x_panel">
                     <div class="x_title">
                         <h2>Users</h2>
+                        <ul class="nav navbar-right panel_toolbox ">
+                            <li>
+                                <a href="{{ path('user_new') }}" class="btn btn-info btn-panel-action" >
+                                    Add User
+                                </a>
+                            </li>
+                        </ul>
                         <div class="clearfix"></div>
                     </div>
                     <div class="x_content">
@@ -64,43 +71,3 @@
         </div>
 <!-- /page content -->
 {% endblock page_content %}
-
-{% block body %}
-    <h1>User list</h1>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Name</th>
-                <th>Surname</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for user in users %}
-            <tr>
-                <td><a href="{{ path('user_show', { 'id': user.id }) }}">{{ user.id }}</a></td>
-                <td>{{ user.name }}</td>
-                <td>{{ user.surname }}</td>
-                <td>
-                    <ul>
-                        <li>
-                            <a href="{{ path('user_show', { 'id': user.id }) }}">show</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('user_edit', { 'id': user.id }) }}">edit</a>
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
-
-    <ul>
-        <li>
-            <a href="{{ path('user_new') }}">Create a new entry</a>
-        </li>
-    </ul>
-{% endblock %}

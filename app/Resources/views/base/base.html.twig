@@ -14,7 +14,7 @@
     <!-- Font Awesome -->
     <link href="{{ asset('assets/vendor/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
     <!-- Custom Theme Style -->
-    <link href="{{ asset('css/custom.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 {% endblock stylesheets %}
 </head>
 
@@ -40,9 +40,9 @@
                             <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
                                 <div class="input-group">
                                     <input type="text" class="form-control" placeholder="Search for...">
-                        <span class="input-group-btn">
-                          <button class="btn btn-default" type="button">Go!</button>
-                        </span>
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button">Go!</button>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -56,10 +56,7 @@
         </div>
         <!-- /page content -->
 
-
         {% include 'base/footer.html.twig' %}
-
-
     </div>
 </div>
 
@@ -77,7 +74,7 @@
 {% block modals %}{% endblock modals %}
 
 <!-- Custom Theme Scripts -->
-<script src="{{ asset('js/custom.min.js') }}"></script>
+<script src="{{ asset('js/custom.js') }}"></script>
 
 
 </body>
