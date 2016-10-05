@@ -19,8 +19,8 @@ class LoadUserData implements FixtureInterface
         $userAdmin = new User();
         $userAdmin->setUsername('admin');
         $userAdmin->setPlainPassword('test');
-        $userAdmin->setName("admin");
-        $userAdmin->setSurname("admin");
+        $userAdmin->setFirstName("admin");
+        $userAdmin->setLastName("admin");
         $userAdmin->setEmail("baltulionis.simonas@gmail.com");
         $userAdmin->setRoles(array('ROLE_ADMIN'));
         $userAdmin->setEnabled(true);
@@ -32,8 +32,8 @@ class LoadUserData implements FixtureInterface
         $userAccountant = new User();
         $userAccountant->setUsername('accoutant');
         $userAccountant->setPassword('test');
-        $userAccountant->setName("accoutant");
-        $userAccountant->setSurname("accoutant");
+        $userAccountant->setFirstName("accoutant");
+        $userAccountant->setLastName("accoutant");
         $userAccountant->setEmail("accoutant@accoutant.com");
         $userAccountant->setRoles(array('ROLE_ACCOUNTANT'));
         $manager->persist($userAccountant);
@@ -41,8 +41,8 @@ class LoadUserData implements FixtureInterface
         $userEmployee = new User();
         $userEmployee->setUsername('employee');
         $userEmployee->setPassword('test');
-        $userEmployee->setName("employee");
-        $userEmployee->setSurname("employee");
+        $userEmployee->setFirstName("employee");
+        $userEmployee->setLastName("employee");
         $userEmployee->setEmail("employee@employee.com");
         $userEmployee->setRoles(array('ROLE_User'));
         $manager->persist($userEmployee);
